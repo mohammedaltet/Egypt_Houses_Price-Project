@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <link rel='stylesheet' href='static\styles\index.css'/>
+
+    <title>Home Page</title> 
+</head>
+
+
+<body> 
+    <div class='header'>
+        <h1> Houes Price App</h1>
+        <p> welcome to our application where you can predict Price of Houeses </p>
+    </div>
+
+    <div> 
+        <form action="/predict" method="POST">
+            <label for="City">City</label><br>
+            <input type='text' name='Location_City'><br><br>
+            
+            <label for="Beds">Beds</label><br>
+            <input type='number' step="0.1" id='Beds' name='Bed_Rooms'><br><br>
+
+            <label for="Baths">Baths</label><br>
+            <input type='number' step="0.1" id='Baths' name='Bath_Rooms'><br><br>
+
+            <label for="Space">Space</label><br>
+            <input type='number' step="0.1" id='Space' name='Home_Space_SQM'><br><br>
+
+            <label for='Furnished'>Furnished</label><br>
+            <select id='Furnished' name='Furnished'>
+                <option value=Yes>Yes</option>
+                <option value=No>No</option>
+            </select><br><br>
+        
+            <label for='Type'>Type</label><br>
+            <select id='Type' name='Property_Type'>
+                <option value='Apartment'>Apartment</option>
+                <option value='Duplex'>Duplex</option>
+                <option value='Stand Alone Villa'>Stand Alone Villa</option>
+                <option value='Twin House'>Twin House</option>
+                <option value='Town House'>Town House</option>
+                <option value='Chalet'>Chalet</option>
+            </select><br><br>
+
+            <input type="Submit" value="Predict"/>
+        </form>
+        
+    </div>
+
+
+</body>
